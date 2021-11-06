@@ -1,0 +1,19 @@
+camunda:
+  bpm:
+    generic-properties:
+      properties:
+        default-user-permission-name-for-task: TASK_WORK
+    job-execution:
+      enabled: true
+    admin-user:
+      id: demo
+      password: demo
+      firstName: anhnth
+    filter:
+      create: All tasks
+    metrics:
+      enabled: true
+      db-reporter-activate: true
+    auto-deployment-enabled: false
+    history-level: audit
+

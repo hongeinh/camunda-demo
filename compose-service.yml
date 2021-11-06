@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  camunda-webapp:
+    image: 10.60.105.39:8297/camunda-spring-boot:1.0
+    command: "-Duser.timezone=GMT+7 -jar /application.jar"
+    ports:
+      - 8080:8761
+    environment:
+      SPRING_APPLICATION_NAME: "camunda-spring"
+      SERVER_PORT: "8761"
+    deploy:
+      replicas: 1
